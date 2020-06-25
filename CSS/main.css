@@ -1,0 +1,682 @@
+/* Main rulz*/
+
+*
+{
+    background-size: cover;
+    font-family: monospace;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container
+{
+    width: 85%;
+    margin: auto;
+}
+
+/* end main rulz */
+
+
+/* The navigation bar starts here*/
+
+.bars
+{
+    display: none;
+}
+.nav-bar
+{
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+    padding: 0 15px;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+}
+.logo
+{
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 15px;
+}
+.logo:hover
+{
+    letter-spacing: 2px;
+}
+.nav-bar ul
+{
+    list-style: none;
+    float: right;
+    transition: all 0.7s ease-in-out;
+    z-index: 9999;
+}
+.nav-bar ul li
+{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-bar ul li a
+{
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.nav-bar ul li a:hover
+{
+    border-bottom: 2px solid #000;
+}
+@media (orientation: portrait), (max-width: 768px) {
+    html {
+        font-size: 200%;
+    }
+    .logo
+    {
+        display: block;
+        width: 100px;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .logo:hover
+    {
+        letter-spacing: 5px;
+    }
+    .nav-bar ul 
+    {
+        top: 50px;
+        right: 0px;
+        width: 100%;
+        position: fixed;
+        background-color: #eee;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nav-bar ul li
+    {
+        display: block;
+        text-align: center;
+        margin: 40px;
+    }
+    .nav-bar ul li a {
+        font-size: 2rem;
+    }
+    .bars
+    {
+        display: block;
+        background-color: FFF;
+        z-index: 5;
+        float: right;
+        cursor: pointer;
+    }
+    .bar
+    {
+        background-color: #000;
+        height: 5px;
+        width: 30px;
+        margin: 5px;
+        border-radius: 6px;
+        transition: all 0.7s ease-out;
+    }
+    .top
+    {
+        transform: translate(0, 10px) rotate(45deg) scale(1.2);
+    }
+    .mid
+    {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    .bot
+    {
+        transform: translate(0, -10px) rotate(-45deg) scale(1.2);
+    }
+    .translate
+    {
+        transform: translate(100vw,0)
+    }
+}
+
+/* The navigation bar ends here*/
+
+
+/* The headder starts here*/
+
+.headder
+{
+    height: 70vh;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    background-image: url(hercal2.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+    
+}
+.opacity
+{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5
+}
+.headder .text1
+{
+    color: #c8c8c8;
+    position: absolute;
+    bottom: 20%;
+}
+.headder .text1 p
+{
+    width: 70%;
+}
+
+/* The headder ends here*/
+
+
+/* The first-section starts here*/
+
+.first-section
+{
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 100px;
+}
+.first-section .text2
+{
+    color: #505050;
+    width: 100%;
+    text-align: center;
+}
+button
+{
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 25px;
+    outline: 0;
+    border: 2px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button input:hover
+{
+    background-color: #FFF;
+    color: #000
+}
+@media (orientation: portrait), (max-width: 768px) {
+    .first-section .text2
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* The first-section ends here*/
+
+
+/* The secound-section starts here*/
+
+.secound-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    padding: 70px;
+}
+.secound-section .part
+{
+    margin: 20px;
+    text-align: center;
+}
+.secound-section .part .first-p
+{
+    color: #878787;
+}
+.secound-section .part input
+{
+    background-color: #000;
+    color: #FFF;
+    padding: 8px;
+    outline: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.secound-section .part input:hover
+{
+    background-color: #FFF;
+    color: #000
+}
+
+@media (orientation: portrait), (max-width: 768px) {
+    .secound-section
+    {
+        display: block;
+        justify-content: center;
+    }
+    .secound-section .part
+    {
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .secound-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+/* The secound-section ends here*/
+
+
+/* The third-section starts here*/
+
+.third-section
+{
+    background-color: #1d2227;
+    color: #FFF;
+    padding-top: 50px;
+}
+.third-section .text
+{
+    text-align: center;
+}
+.third-section .text div 
+{
+    font-size: 35px; 
+}
+.third-section .text p
+{
+    color: #b1b1b1;
+    margin-top: 40px;
+}
+.third-section .img-butt
+{
+    width: 75%;
+    margin: auto;
+    background-image: url(brand.jpg);
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.third-section .img-butt input
+{
+    background-color: transparent;
+    color: #000;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 15px 25px;
+    outline: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.third-section .img-butt input:hover
+{
+    background-color: #000;
+    color: #fff;
+}
+
+/* The third-section ends here*/
+
+
+/* The forth-section starts here*/
+
+.bg-color
+{
+    background-color: #28303a
+}
+.forth-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.forth-section .part
+{
+    margin: 10px;
+}
+.forth-section .part .ico
+{
+    color: #3fbf90;
+    font-size: 30px;
+}
+.forth-section .part .h
+{
+    color: #FFF;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    font-size: 1.1rem;
+}
+.forth-section .part p
+{
+    color: #b5b5b5;
+    font-size: 1.02rem;
+}
+@media (max-width: 1080px)
+{
+    .forth-section
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (orientation: portrait), (max-width: 768px) {
+    .forth-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    .forth-section .part {
+        width: 75%;
+        margin: auto;
+    }
+    .forth-section .part .ico,
+    .forth-section .part .h {
+        display: inline-block;
+    }
+}
+
+/* The forth-section ends here*/
+
+
+/* The fifht-section starts here*/
+
+.fifth-section
+{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    margin-bottom: 0;
+}
+.fifth-section .first-text
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 20%;
+    padding-right: 10%;
+}
+.fifth-section .first-text .h1
+{
+    font-size: 30px;
+    font-weight: 100;
+}
+.fifth-section .first-text .h1 span
+{
+    color: #3fbf90;
+    margin: 10px;
+    margin-left: 0;
+}
+.fifth-section .first-text .p1
+{
+    font-size: 1rem;
+    color: #878787;
+    margin: 20px;
+    margin-left: 0;
+}
+.fifth-section .first-text .p2
+{
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+.img1
+{
+    grid-column: 3/5;
+    width: 100%;
+}
+@media (max-width: 1230px)
+{
+    .fifth-section
+    {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .fifth-section .first-text
+    {
+        padding-top: 20%;
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .img1
+    {
+        display: none;
+    }
+    .sec-text
+    {
+        background-color: #878787;
+        padding-top: 10%;
+        padding-left: 0%;
+        color: #FFF;
+        padding-right: 0%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    .third-text
+    {
+        display: none;
+    }
+    .img-3
+    {
+        display: none;
+    }
+}
+.img2
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+}
+.sec-text
+{
+    grid-row: 2/3;
+    grid-column: 3/5;
+    background-color: #878787;
+    padding-top: 10%;
+    padding-left: 5%;
+    color: #FFF;
+    padding-right: 15%;
+}
+.sec-text .date
+{
+    margin: 15px;
+    margin-left: 0;
+    font-size: 13px;
+}
+.sec-text .img-1
+{
+    width: 50px;
+    height: 50;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #323232
+}
+.sec-text .p
+{
+    font-size: 20px;
+}
+.port
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.third-text .img-1
+{
+    width: 50px;
+    height: 50;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #323232
+}
+.third-text .p
+{
+    font-size: 20px;
+}
+.img-3
+{
+    grid-column: 1/5;
+    grid-row: 3/5;
+    width: 100%;
+}
+.third-text
+{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: #878787;
+    padding-top: 10%;
+    color: #FFF;
+    padding-left: 15%;
+    padding-bottom: 10%;
+}
+
+/* The fifht-section ends here*/
+
+
+/* The last-section starts here*/
+
+.last-section
+{
+    background-color: #1d2227;
+    padding: 0 0 3% 0;
+}
+.grid-3
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #EEE
+}
+.first-half p
+{
+    color: #afafaf;
+    font-size: 1rem;
+}
+.first-half h5
+{
+    color: #cccccc
+}
+.last-text
+{
+    padding: 5% 10% 5% 0;
+}
+.last-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.last ul
+{
+    list-style: none;
+}
+.last ul li
+{
+    padding: 0;
+    color: #afafaf;
+    font-size: 0.7rem;
+}
+.sec-half
+{
+    padding-top: 70px;
+}
+.input-text
+{
+    height: 35px;
+    width: 300px;
+    outline: 0;
+    border: 0;
+    padding-left: 7px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.input div
+{
+    height: 35px;
+    width: 35px;
+    background-color: #878787;
+    display: inline-flex;
+    cursor: pointer;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    align-items: center;
+    justify-content: center;
+}
+.input
+{
+    display: flex;
+}
+.stay
+{
+    margin: 10px;
+}
+.sec-half p
+{
+    font-size: 13px;
+    width: 50%;
+    color: #878787
+}
+@media (orientation: portrait), (max-width: 768px) {
+    .grid-3
+    {
+        grid-template-columns: 1fr;
+    }
+    .first-half p
+    {
+        text-align: center;
+    }
+    .first-half h4
+    {
+        text-align: center;
+    }
+    .last
+    {
+        text-align: center;
+        width: 30%;
+        margin: 0;
+    }
+    .last-section
+    {
+        padding-bottom: 10%;
+    }
+    .last-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .last-container .last {
+        text-align: left;
+    }
+    .last-container .last li {
+        font-size: 1rem;
+    }
+    .last-container .last h5 {
+        font-size: 1.2rem;
+    }
+    .last-text {
+        padding: 0;
+    }
+}
+
+/* The last-section ends here*/
+
+.overflow {
+    overflow: hidden;
+}
